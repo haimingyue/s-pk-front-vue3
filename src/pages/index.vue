@@ -1,5 +1,5 @@
 <template>
-  <div>Hello world by pages</div>
+  <div>Hello world by pages1111</div>
 </template>
 
 <script setup lang="ts"></script>
