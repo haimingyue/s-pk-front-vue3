@@ -11,8 +11,10 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
+  "inlcude": ["./typed-router.d.ts"],
   "compilerOptions": {
     "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "types": ["unplugin-vue-router/client"]
   }
 }
