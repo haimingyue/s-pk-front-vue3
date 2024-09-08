@@ -11,10 +11,10 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
-  "inlcude": ["./typed-router.d.ts"],
+  "inlcude": ["typed-router.d.ts", "auto-imports.d.ts"],
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "types": ["unplugin-vue-router/client"]
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
   }
 }

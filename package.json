@@ -47,6 +47,7 @@
     "start-server-and-test": "^2.0.4",
     "typescript": "~5.5.4",
     "unocss": "^0.62.3",
+    "unplugin-auto-import": "^0.18.2",
     "vite": "^5.3.1",
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.21"
