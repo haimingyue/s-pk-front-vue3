@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@unocss/preset-icons':
+        specifier: ^0.62.3
+        version: 0.62.3
       '@unocss/reset':
         specifier: ^0.62.3
         version: 0.62.3
@@ -33,6 +36,9 @@ importers:
       '@iconify-json/mdi':
         specifier: ^1.2.0
         version: 1.2.0
+      '@iconify/json':
+        specifier: ^2.2.246
+        version: 2.2.246
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
         version: 1.10.4
@@ -605,6 +611,9 @@ packages:
 
   '@iconify-json/mdi@1.2.0':
     resolution: {integrity: sha512-E9/3l5Syg3wfuarorFodhn4s8YorxhH3U3U20LaNBNiqw1kFNIDWhF6HymuzAD35k7RH0OBasJ+ZUyFtVVV6eg==}
+
+  '@iconify/json@2.2.246':
+    resolution: {integrity: sha512-69/F8EhI4MP1xcpD0rUm09h7o2X2OYfpABe4D53cp4Cr1AYeu90OGJlOTayKqzSh9fPXr3YE8JOyo5LVBiCW0g==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3687,6 +3696,11 @@ snapshots:
   '@iconify-json/mdi@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
+
+  '@iconify/json@2.2.246':
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
 
   '@iconify/types@2.0.0': {}
 
