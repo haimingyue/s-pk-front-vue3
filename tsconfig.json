@@ -11,7 +11,7 @@
       "path": "./tsconfig.vitest.json"
     }
   ],
-  "inlcude": ["typed-router.d.ts", "auto-imports.d.ts"],
+  "inlcude": ["typed-router.d.ts", "auto-imports.d.ts", "components.d.ts"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",

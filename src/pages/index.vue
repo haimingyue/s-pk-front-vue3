@@ -10,6 +10,8 @@
       Scaling CSS at Heroku with Utility Classes
     </h2>
     {{ msg111 }}
+    <HelloWorld></HelloWorld>
+    <UserComponent></UserComponent>
   </div>
 </template>
 
