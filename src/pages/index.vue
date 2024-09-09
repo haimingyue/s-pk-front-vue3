@@ -12,6 +12,7 @@
     {{ msg111 }}
     <HelloWorld></HelloWorld>
     <UserComponent></UserComponent>
+    <icon-mdi-account style="color: red"></icon-mdi-account>
   </div>
 </template>
 
