@@ -4,10 +4,15 @@
     <RouterLink to="/about">About</RouterLink>
 
     About
+    <Child :foo="['1', '2']" @update="handleUpdate"></Child>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const handleUpdate = (val: string) => {
+  console.log(val)
+}
+</script>
 
 <style>
 @media (min-width: 1024px) {

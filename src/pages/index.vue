@@ -34,12 +34,14 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="tsx">
 const msg111 = ref<string>('123')
 
 const target = ref(null)
 
 const { x, y, isOutside } = useMouseInElement(target)
+
+// defineRender(() => <div class="p-4">Hello World</div>)
 
 // const msg = reactive({
 //   msg: 'Hello World'
