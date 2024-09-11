@@ -5,18 +5,16 @@ import { defineConfig } from 'unocss'
 import presetIcons from '@unocss/preset-icons'
 
 export default defineConfig({
-  rules: [
-    ['mxxz-1', { margin: '1000px' }],
-  ],
+  rules: [['mxxz-1', { margin: '1000px' }]],
   presets: [
     presetWind(),
     presetIcons({
       // prefix: 'i-'
-      // extraProperties: {
-      //   display: 'inline-block',
-      //   'vertical-align': 'middle'
-      //   // ...
-      // }
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle'
+        // ...
+      }
     })
   ]
 })
