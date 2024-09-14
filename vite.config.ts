@@ -13,6 +13,7 @@ import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import VueMacros from 'unplugin-vue-macros/vite'
+import { VitePWA } from 'vite-plugin-pwa'
 
 import Layouts from 'vite-plugin-vue-layouts'
 
@@ -59,7 +60,8 @@ export default defineConfig({
     Layouts({
       layoutsDirs: 'src/layouts',
       defaultLayout: 'default'
-    })
+    }),
+    VitePWA()
   ],
   resolve: {
     alias: {

@@ -35,6 +35,18 @@
 </template>
 
 <script setup lang="tsx">
+import { registerSW } from 'virtual:pwa-register'
+
+onMounted(() => {
+  updateSW()
+})
+
+const updateSW = registerSW({
+  immediate: true,
+  onRegisteredSW() {},
+  onNeedRefresh() {},
+  onOfflineReady() {}
+})
 const msg111 = ref<string>('123')
 
 const target = ref(null)
