@@ -7,9 +7,6 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    Child: typeof import('./src/components/Child.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    IconMdiAccount: typeof import('~icons/mdi/account')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
