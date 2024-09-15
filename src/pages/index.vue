@@ -31,6 +31,8 @@
     <button class="i-carbon-sun dark:i-carbon-moon" />
     <!-- Twemoji of laugh, turns to tear on hovering -->
     <div class="i-twemoji-grinning-face-with-smiling-eyes hover:i-twemoji-face-with-tears-of-joy" />
+    <ReloadPrompt></ReloadPrompt>
+    hello
   </div>
 </template>
 
@@ -43,8 +45,15 @@ onMounted(() => {
 
 const updateSW = registerSW({
   immediate: true,
-  onRegisteredSW() {},
-  onNeedRefresh() {},
+  onRegisteredSW(url, registration) {
+    console.log('Service Worker is registered', url, registration)
+    setInterval(() => {
+      registration && registration && registration.update()
+    }, 5000)
+  },
+  // onNeedRefresh() {
+  //   console.log('need refresh')
+  // },
   onOfflineReady() {}
 })
 const msg111 = ref<string>('123')
